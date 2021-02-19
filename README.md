@@ -1,2 +1,2 @@
-# final-html.github.io
+# final-html
 final project
