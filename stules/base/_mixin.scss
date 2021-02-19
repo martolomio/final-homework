@@ -1,0 +1,24 @@
+@mixin base ($w, $h) {
+   width: $w;
+   height: $h; 
+}
+@mixin display ($d, $fd, $jc, $ai) {
+    display: $d;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;    
+}
+@mixin smalldisplay ($d, $jc) {
+    display: $d;
+    justify-content: $jc;
+}
+@mixin _768 {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin _320 {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
